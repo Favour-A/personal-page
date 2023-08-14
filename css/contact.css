@@ -1,0 +1,97 @@
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: gray;
+    /* Additional styles for the body element */
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+        
+}
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2px;
+    padding: 1rem;
+    flex: start;
+}
+
+#nav {
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Move navigation to the right */
+
+}
+#nav ul {
+    list-style: none;
+    margin-right: 20rem;
+    padding: 0;
+}
+#nav li {
+    margin: 0 15px;
+    display: inline-block;
+
+}
+#nav a {
+    /*color: white;
+    text-decoration: none;*/
+    padding: 10px 20px;
+    border-left: 2px solid orangered;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: color 0.3s ease-in-out;
+}
+#nav a:hover {
+    color: #FFD700; /* Change to your desired hover color */
+}
+.header {
+    padding: 4rem 0;
+    background-image: linear-gradient(to right, #ff9900, #ff3399);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.header h2 {
+    font-size: 3rem;
+    color: rgb(58, 4, 4);
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem;
+}
+.header p {
+    font-size: 1.5rem;
+    color: rgb(41, 7, 7);
+    text-align: center;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.form form {
+    border-radius: 2px;
+    margin: 1rem;
+    border: 3px double orangered;
+    margin-bottom: 2rem;
+}
+.form h3 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem;
+}

@@ -1,0 +1,131 @@
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Aclonica", sans-serif;
+
+}
+
+/* Style the dark-mode img */
+.dark-mode {
+    background: linear-gradient(to bottom, #1a1a1a, rgb(8, 0, 0)) ;
+    color: #fff;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2px;
+    padding: 1rem;
+    flex: start;
+}
+
+#nav {
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Move navigation to the right */
+
+}
+#nav ul {
+    list-style: none;
+    margin-right: 20rem;
+    padding: 0;
+}
+#nav li {
+    margin: 0 15px;
+    display: inline-block;
+
+}
+#nav a {
+    /*color: white;
+    text-decoration: none;*/
+    padding: 10px 20px;
+    border-left: 2px solid black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(199, 20, 20);
+    transition: color 0.3s ease-in-out;
+}
+#nav a:hover {
+    color: #FFD700; /* Change to your desired hover color */
+}
+#nav a:active {
+    color: #1900ff; /* Change to your desired hover color */
+}
+
+#nav img {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1px;
+    padding: 0;
+    
+}
+
+button {
+    background-color: transparent;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Gap between images */
+}
+#projects img {
+    width: 100%; /* Make images fill their grid cell */
+    height: auto;
+    display: block;
+}
+#projects img:hover {
+    opacity: 0.7;
+}
+
+#projects p {
+    font-style: italic;
+
+}
+
+@media screen and (max-width: 992px ){
+    #projects {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid columns */
+        gap: 10px;
+    }
+    #nav img {
+        height: 1rem;
+        width: 1rem;
+    }
+    #nav ul {
+        margin-right: 10rem;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    #nav ul {
+        margin-right: 0;
+        float: none;
+    }
+    #nav img {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    #nav {
+        justify-content: center;
+    }
+    #projects {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid columns */
+        gap: 5px;
+    }
+    #projects p {
+        font-size: 0.5rem;
+    }
+    #projects h5 {
+        font-size: 0.6rem;
+    }
+}
